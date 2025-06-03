@@ -44,6 +44,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.ShowPassCB);
             this.panel1.Controls.Add(this.Loginbtn);
             this.panel1.Controls.Add(this.Clearbtn);
@@ -52,7 +53,7 @@
             this.panel1.Controls.Add(this.Usernamelbl);
             this.panel1.Controls.Add(this.Passlbl);
             this.panel1.Controls.Add(this.Loginlbl);
-            this.panel1.Location = new System.Drawing.Point(378, 12);
+            this.panel1.Location = new System.Drawing.Point(400, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(338, 370);
             this.panel1.TabIndex = 0;
@@ -61,7 +62,7 @@
             // 
             this.ShowPassCB.AutoSize = true;
             this.ShowPassCB.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowPassCB.Location = new System.Drawing.Point(143, 218);
+            this.ShowPassCB.Location = new System.Drawing.Point(143, 221);
             this.ShowPassCB.Name = "ShowPassCB";
             this.ShowPassCB.Size = new System.Drawing.Size(115, 21);
             this.ShowPassCB.TabIndex = 9;
@@ -74,7 +75,7 @@
             this.Loginbtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.Loginbtn.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Loginbtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.Loginbtn.Location = new System.Drawing.Point(177, 260);
+            this.Loginbtn.Location = new System.Drawing.Point(177, 264);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.Size = new System.Drawing.Size(125, 35);
             this.Loginbtn.TabIndex = 8;
@@ -86,7 +87,7 @@
             // 
             this.Clearbtn.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Clearbtn.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clearbtn.Location = new System.Drawing.Point(44, 260);
+            this.Clearbtn.Location = new System.Drawing.Point(44, 264);
             this.Clearbtn.Name = "Clearbtn";
             this.Clearbtn.Size = new System.Drawing.Size(125, 35);
             this.Clearbtn.TabIndex = 7;
@@ -144,7 +145,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SysStock.Properties.Resources.hero_img;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(338, 370);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,7 +157,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(728, 394);
+            this.ClientSize = new System.Drawing.Size(778, 444);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "LoginForm";
