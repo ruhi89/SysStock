@@ -33,10 +33,9 @@ namespace SysStock
             {
                 MessageBox.Show("Login Successful!", "SysStock", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Open MainForm
-                //MainForm mainForm = new MainForm();
-                //this.Hide(); // Hide Login Form
-                //mainForm.Show();
+                MainForm mainForm = new MainForm(Usernametxt.Text.Trim());
+                this.Hide(); // Hide Login Form
+                mainForm.Show();
             }
             else
             {
