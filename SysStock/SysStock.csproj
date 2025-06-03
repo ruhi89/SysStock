@@ -66,6 +66,12 @@
     <Compile Include="UserListControl.Designer.cs">
       <DependentUpon>UserListControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserRegisterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserRegisterControl.Designer.cs">
+      <DependentUpon>UserRegisterControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +90,9 @@
     </Compile>
     <EmbeddedResource Include="UserListControl.resx">
       <DependentUpon>UserListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegisterControl.resx">
+      <DependentUpon>UserRegisterControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

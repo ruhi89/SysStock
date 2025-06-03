@@ -28,46 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.btnAddUser = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewUsers
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(995, 425);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUsers.Location = new System.Drawing.Point(0, 55);
+            this.dataGridViewUsers.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewUsers.Name = "dataGridViewUsers";
+            this.dataGridViewUsers.RowHeadersWidth = 62;
+            this.dataGridViewUsers.RowTemplate.Height = 28;
+            this.dataGridViewUsers.Size = new System.Drawing.Size(663, 276);
+            this.dataGridViewUsers.TabIndex = 0;
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(780, 29);
+            this.btnAddUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddUser.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAddUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddUser.FlatAppearance.BorderSize = 0;
+            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddUser.Location = new System.Drawing.Point(558, 12);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(75, 23);
+            this.btnAddUser.Size = new System.Drawing.Size(80, 30);
             this.btnAddUser.TabIndex = 1;
-            this.btnAddUser.Text = "button1";
-            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Text = "Add User";
+            this.btnAddUser.UseVisualStyleBackColor = false;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // UserListControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnAddUser);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewUsers);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserListControl";
-            this.Size = new System.Drawing.Size(995, 510);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(663, 332);
+            this.Load += new System.EventHandler(this.UserListControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewUsers;
         private System.Windows.Forms.Button btnAddUser;
     }
 }

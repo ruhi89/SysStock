@@ -50,7 +50,7 @@ namespace SysStock
 
         }
 
-        private void LoadControl(UserControl control)
+        public void LoadControl(UserControl control)
         {
             panelMain.Controls.Clear();
             control.Dock = DockStyle.Fill;
@@ -59,7 +59,7 @@ namespace SysStock
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            LoadControl(new UserListControl());
+            LoadControl(new UserListControl(this));
         }
     }
 }
