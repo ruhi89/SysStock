@@ -1,0 +1,10 @@
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\bin\Debug\SysStock.exe.config
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\bin\Debug\SysStock.exe
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\bin\Debug\SysStock.pdb
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.csproj.AssemblyReference.cache
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.Properties.Resources.resources
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.csproj.GenerateResource.cache
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.csproj.CoreCompileInputs.cache
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.exe
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.pdb
+E:\AIUB\8th semester\OOP2\SysStock\SysStock\obj\Debug\SysStock.LoginForm.resources
