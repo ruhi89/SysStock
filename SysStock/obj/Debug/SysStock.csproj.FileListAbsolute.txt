@@ -33,3 +33,5 @@ E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysSto
 E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.exe
 E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.pdb
 >>>>>>> b716633c701877a3f8225054274feae7bd3fa399
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.MainForm.resources
+E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.UserListControl.resources

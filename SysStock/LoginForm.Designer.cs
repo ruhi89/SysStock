@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.ShowPassCB = new System.Windows.Forms.CheckBox();
-            this.Loginbtn = new System.Windows.Forms.Button();
-            this.Clearbtn = new System.Windows.Forms.Button();
-            this.Usernametxt = new System.Windows.Forms.TextBox();
-            this.Passtxt = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.Usernamelbl = new System.Windows.Forms.Label();
             this.Passlbl = new System.Windows.Forms.Label();
             this.Loginlbl = new System.Windows.Forms.Label();
@@ -46,10 +46,10 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.ShowPassCB);
-            this.panel1.Controls.Add(this.Loginbtn);
-            this.panel1.Controls.Add(this.Clearbtn);
-            this.panel1.Controls.Add(this.Usernametxt);
-            this.panel1.Controls.Add(this.Passtxt);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.btnClear);
+            this.panel1.Controls.Add(this.txtUsername);
+            this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.Usernamelbl);
             this.panel1.Controls.Add(this.Passlbl);
             this.panel1.Controls.Add(this.Loginlbl);
@@ -70,47 +70,47 @@
             this.ShowPassCB.UseVisualStyleBackColor = true;
             this.ShowPassCB.CheckedChanged += new System.EventHandler(this.ShowPassCB_CheckedChanged);
             // 
-            // Loginbtn
+            // btnLogin
             // 
-            this.Loginbtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.Loginbtn.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.Loginbtn.Location = new System.Drawing.Point(177, 264);
-            this.Loginbtn.Name = "Loginbtn";
-            this.Loginbtn.Size = new System.Drawing.Size(125, 35);
-            this.Loginbtn.TabIndex = 8;
-            this.Loginbtn.Text = "Login";
-            this.Loginbtn.UseVisualStyleBackColor = false;
-            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLogin.Location = new System.Drawing.Point(177, 264);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(125, 35);
+            this.btnLogin.TabIndex = 8;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
-            // Clearbtn
+            // btnClear
             // 
-            this.Clearbtn.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.Clearbtn.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clearbtn.Location = new System.Drawing.Point(44, 264);
-            this.Clearbtn.Name = "Clearbtn";
-            this.Clearbtn.Size = new System.Drawing.Size(125, 35);
-            this.Clearbtn.TabIndex = 7;
-            this.Clearbtn.Text = "Clear";
-            this.Clearbtn.UseVisualStyleBackColor = false;
-            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
+            this.btnClear.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(44, 264);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(125, 35);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.Clearbtn_Click);
             // 
-            // Usernametxt
+            // txtUsername
             // 
-            this.Usernametxt.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usernametxt.Location = new System.Drawing.Point(143, 118);
-            this.Usernametxt.Name = "Usernametxt";
-            this.Usernametxt.Size = new System.Drawing.Size(158, 29);
-            this.Usernametxt.TabIndex = 0;
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(143, 118);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(158, 29);
+            this.txtUsername.TabIndex = 0;
             // 
-            // Passtxt
+            // txtPassword
             // 
-            this.Passtxt.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Passtxt.Location = new System.Drawing.Point(143, 183);
-            this.Passtxt.Name = "Passtxt";
-            this.Passtxt.PasswordChar = '*';
-            this.Passtxt.Size = new System.Drawing.Size(158, 29);
-            this.Passtxt.TabIndex = 5;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(143, 183);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(158, 29);
+            this.txtPassword.TabIndex = 5;
             // 
             // Usernamelbl
             // 
@@ -179,10 +179,10 @@
         private System.Windows.Forms.Label Loginlbl;
         private System.Windows.Forms.Label Usernamelbl;
         private System.Windows.Forms.Label Passlbl;
-        private System.Windows.Forms.Button Loginbtn;
-        private System.Windows.Forms.Button Clearbtn;
-        private System.Windows.Forms.TextBox Usernametxt;
-        private System.Windows.Forms.TextBox Passtxt;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.CheckBox ShowPassCB;
     }
 }

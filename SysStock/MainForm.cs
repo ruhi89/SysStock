@@ -40,5 +40,26 @@ namespace SysStock
 
         }
 
+        private void llblLogo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadControl(UserControl control)
+        {
+            panelMain.Controls.Clear();
+            control.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(control);
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            LoadControl(new UserListControl());
+        }
     }
 }
