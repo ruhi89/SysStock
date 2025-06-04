@@ -31,10 +31,12 @@
             this.tlpHeader = new System.Windows.Forms.TableLayoutPanel();
             this.llblLogo = new System.Windows.Forms.LinkLabel();
             this.lblHeader = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.lblFooter = new System.Windows.Forms.Label();
             this.pFooter = new System.Windows.Forms.Panel();
             this.pHeader = new System.Windows.Forms.Panel();
             this.pMenuBar = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnBrands = new System.Windows.Forms.Button();
@@ -42,8 +44,6 @@
             this.btnCategories = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.tlpHeader.SuspendLayout();
             this.pFooter.SuspendLayout();
             this.pHeader.SuspendLayout();
@@ -66,7 +66,6 @@
             this.tlpHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpHeader.Size = new System.Drawing.Size(1002, 60);
             this.tlpHeader.TabIndex = 2;
-            this.tlpHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpHeader_Paint);
             // 
             // llblLogo
             // 
@@ -82,7 +81,6 @@
             this.llblLogo.TabIndex = 0;
             this.llblLogo.TabStop = true;
             this.llblLogo.Text = "SysStock Inventory Management System";
-            this.llblLogo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblLogo_LinkClicked);
             // 
             // lblHeader
             // 
@@ -93,6 +91,20 @@
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(0, 21);
             this.lblHeader.TabIndex = 1;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLogout.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnLogout.Image = global::SysStock.Properties.Resources.logout_5087606__2_;
+            this.btnLogout.Location = new System.Drawing.Point(944, 5);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(50, 50);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // lblFooter
             // 
@@ -105,7 +117,6 @@
             this.lblFooter.TabIndex = 0;
             this.lblFooter.Text = "© 2025 SysStock";
             this.lblFooter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblFooter.Click += new System.EventHandler(this.lblFooter_Click);
             // 
             // pFooter
             // 
@@ -142,6 +153,19 @@
             this.pMenuBar.Name = "pMenuBar";
             this.pMenuBar.Size = new System.Drawing.Size(1002, 80);
             this.pMenuBar.TabIndex = 4;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Location = new System.Drawing.Point(863, 3);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(130, 75);
+            this.btnSettings.TabIndex = 0;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // btnSales
             // 
@@ -182,6 +206,7 @@
             this.btnBrands.TabIndex = 3;
             this.btnBrands.Text = "Brands";
             this.btnBrands.UseVisualStyleBackColor = true;
+            this.btnBrands.Click += new System.EventHandler(this.btnBrands_Click);
             // 
             // btnProducts
             // 
@@ -195,6 +220,7 @@
             this.btnProducts.TabIndex = 2;
             this.btnProducts.Text = "Products";
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnCategories
             // 
@@ -208,6 +234,7 @@
             this.btnCategories.TabIndex = 1;
             this.btnCategories.Text = "Categories";
             this.btnCategories.UseVisualStyleBackColor = true;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
             // btnDashboard
             // 
@@ -222,6 +249,7 @@
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panelMain
             // 
@@ -230,34 +258,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(995, 510);
             this.panelMain.TabIndex = 5;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Location = new System.Drawing.Point(863, 3);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(130, 75);
-            this.btnSettings.TabIndex = 0;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.UseVisualStyleBackColor = true;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogout.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnLogout.Image = global::SysStock.Properties.Resources.logout_5087606__2_;
-            this.btnLogout.Location = new System.Drawing.Point(944, 5);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(50, 50);
-            this.btnLogout.TabIndex = 2;
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.button8_Click);
             // 
             // MainForm
             // 

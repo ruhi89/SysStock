@@ -12,43 +12,22 @@ namespace SysStock
 {
     public partial class MainForm : Form
     {
-        private string currentUser;
+        public string CurrentUser { get; internal set; }
+
         public MainForm(string username)
         {
             InitializeComponent();
-            currentUser= username;
+            CurrentUser = username;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            lblHeader.Text = "Welcome, " + currentUser + "!";
+            lblHeader.Text = "Welcome, " + CurrentUser + "!";
+            LoadControl(new AdminDashboardControl(this));
         }
 
 
-        private void lblLogo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
 
-        }
-
-        private void lblFooter_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tlpHeader_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void llblLogo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public void LoadControl(UserControl control)
         {
@@ -61,5 +40,26 @@ namespace SysStock
         {
             LoadControl(new UserListControl(this));
         }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            LoadControl(new ProductListControl(this));
+        }
+
+        private void btnBrands_Click(object sender, EventArgs e)
+        {
+            LoadControl(new BrandListControl(this));
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            LoadControl(new CategoryListControl(this));
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadControl(new AdminDashboardControl(this));
+        }
+
     }
 }

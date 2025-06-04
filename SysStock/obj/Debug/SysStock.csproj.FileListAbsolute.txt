@@ -12,3 +12,7 @@ D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.exe
 D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.pdb
 D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.exe.config
 D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.UserRegisterControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.ProductListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.BrandListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.CategoryListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.AdminDashboardControl.resources
