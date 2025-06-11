@@ -23,5 +23,10 @@ namespace SysStock
         {
 
         }
+
+        private void btnAddBrand_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadControl(new BrandCreateControl());
+        }
     }
 }

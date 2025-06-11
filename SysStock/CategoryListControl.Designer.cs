@@ -46,6 +46,7 @@
             this.btnAddCategory.TabIndex = 5;
             this.btnAddCategory.Text = "Add Category";
             this.btnAddCategory.UseVisualStyleBackColor = false;
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
             // dataGridViewCategories
             // 

@@ -46,6 +46,7 @@
             this.btnAddProduct.TabIndex = 3;
             this.btnAddProduct.Text = "Add Product";
             this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // dataGridViewProducts
             // 

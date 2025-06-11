@@ -51,9 +51,10 @@
             this.lblRegister.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRegister.AutoSize = true;
             this.lblRegister.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegister.Location = new System.Drawing.Point(264, 10);
+            this.lblRegister.Location = new System.Drawing.Point(396, 15);
+            this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(129, 25);
+            this.lblRegister.Size = new System.Drawing.Size(199, 40);
             this.lblRegister.TabIndex = 0;
             this.lblRegister.Text = "Register User";
             // 
@@ -62,9 +63,10 @@
             this.lblFullName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFullName.AutoSize = true;
             this.lblFullName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(200, 82);
+            this.lblFullName.Location = new System.Drawing.Point(300, 126);
+            this.lblFullName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(61, 15);
+            this.lblFullName.Size = new System.Drawing.Size(96, 25);
             this.lblFullName.TabIndex = 1;
             this.lblFullName.Text = "Full Name";
             // 
@@ -73,9 +75,10 @@
             this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(200, 115);
+            this.lblUsername.Location = new System.Drawing.Point(300, 177);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(60, 15);
+            this.lblUsername.Size = new System.Drawing.Size(96, 25);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
@@ -84,9 +87,10 @@
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(200, 148);
+            this.lblEmail.Location = new System.Drawing.Point(300, 228);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
+            this.lblEmail.Size = new System.Drawing.Size(56, 25);
             this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = "Email";
             // 
@@ -95,9 +99,10 @@
             this.lblRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.Location = new System.Drawing.Point(200, 181);
+            this.lblRole.Location = new System.Drawing.Point(300, 278);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(30, 15);
+            this.lblRole.Size = new System.Drawing.Size(49, 25);
             this.lblRole.TabIndex = 4;
             this.lblRole.Text = "Role";
             // 
@@ -106,9 +111,10 @@
             this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(200, 214);
+            this.lblPassword.Location = new System.Drawing.Point(300, 329);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(57, 15);
+            this.lblPassword.Size = new System.Drawing.Size(90, 25);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Password";
             // 
@@ -116,9 +122,10 @@
             // 
             this.rbAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbAdmin.AutoSize = true;
-            this.rbAdmin.Location = new System.Drawing.Point(286, 178);
+            this.rbAdmin.Location = new System.Drawing.Point(429, 274);
+            this.rbAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbAdmin.Name = "rbAdmin";
-            this.rbAdmin.Size = new System.Drawing.Size(54, 17);
+            this.rbAdmin.Size = new System.Drawing.Size(79, 24);
             this.rbAdmin.TabIndex = 6;
             this.rbAdmin.TabStop = true;
             this.rbAdmin.Text = "Admin";
@@ -128,9 +135,10 @@
             // 
             this.rbStaff.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbStaff.AutoSize = true;
-            this.rbStaff.Location = new System.Drawing.Point(396, 178);
+            this.rbStaff.Location = new System.Drawing.Point(594, 274);
+            this.rbStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbStaff.Name = "rbStaff";
-            this.rbStaff.Size = new System.Drawing.Size(47, 17);
+            this.rbStaff.Size = new System.Drawing.Size(69, 24);
             this.rbStaff.TabIndex = 7;
             this.rbStaff.TabStop = true;
             this.rbStaff.Text = "Staff";
@@ -139,33 +147,37 @@
             // txtFullName
             // 
             this.txtFullName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFullName.Location = new System.Drawing.Point(286, 80);
+            this.txtFullName.Location = new System.Drawing.Point(429, 123);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(157, 20);
+            this.txtFullName.Size = new System.Drawing.Size(234, 26);
             this.txtFullName.TabIndex = 8;
             // 
             // txtUsername
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsername.Location = new System.Drawing.Point(286, 113);
+            this.txtUsername.Location = new System.Drawing.Point(429, 174);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(157, 20);
+            this.txtUsername.Size = new System.Drawing.Size(234, 26);
             this.txtUsername.TabIndex = 9;
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(286, 146);
+            this.txtEmail.Location = new System.Drawing.Point(429, 225);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(157, 20);
+            this.txtEmail.Size = new System.Drawing.Size(234, 26);
             this.txtEmail.TabIndex = 10;
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.Location = new System.Drawing.Point(286, 212);
+            this.txtPassword.Location = new System.Drawing.Point(429, 326);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(157, 20);
+            this.txtPassword.Size = new System.Drawing.Size(234, 26);
             this.txtPassword.TabIndex = 11;
             // 
             // panel1
@@ -173,9 +185,10 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Location = new System.Drawing.Point(193, 72);
+            this.panel1.Location = new System.Drawing.Point(290, 111);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(262, 226);
+            this.panel1.Size = new System.Drawing.Size(393, 348);
             this.panel1.TabIndex = 12;
             // 
             // btnRegister
@@ -184,10 +197,9 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegister.Location = new System.Drawing.Point(177, 184);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegister.Location = new System.Drawing.Point(266, 283);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(73, 23);
+            this.btnRegister.Size = new System.Drawing.Size(110, 35);
             this.btnRegister.TabIndex = 10;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -198,17 +210,16 @@
             this.btnClear.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(93, 184);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClear.Location = new System.Drawing.Point(140, 283);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(73, 23);
+            this.btnClear.Size = new System.Drawing.Size(110, 35);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
             // UserRegisterControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
@@ -223,8 +234,9 @@
             this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserRegisterControl";
-            this.Size = new System.Drawing.Size(663, 332);
+            this.Size = new System.Drawing.Size(994, 511);
             this.Load += new System.EventHandler(this.UserRegisterControl_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

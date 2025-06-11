@@ -16,7 +16,7 @@ namespace SysStock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm("X"));
+            Application.Run(new LoginForm());
         }
     }
 }

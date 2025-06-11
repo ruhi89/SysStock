@@ -23,5 +23,10 @@ namespace SysStock
         {
 
         }
+
+        private void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadControl(new CatagoryCreateControl());
+        }
     }
 }

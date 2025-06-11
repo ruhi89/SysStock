@@ -12,11 +12,13 @@ namespace SysStock
 {
     public partial class MainForm : Form
     {
+        public int CurrentUserId { get; internal set; }
         public string CurrentUser { get; internal set; }
 
-        public MainForm(string username)
+        public MainForm(int userId,string username)
         {
             InitializeComponent();
+            CurrentUserId = userId;
             CurrentUser = username;
         }
 
@@ -61,5 +63,9 @@ namespace SysStock
             LoadControl(new AdminDashboardControl(this));
         }
 
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            LoadControl(new SettingsControl(this,CurrentUserId));
+        }
     }
 }

@@ -46,6 +46,7 @@
             this.btnAddBrand.TabIndex = 5;
             this.btnAddBrand.Text = "Add Brand";
             this.btnAddBrand.UseVisualStyleBackColor = false;
+            this.btnAddBrand.Click += new System.EventHandler(this.btnAddBrand_Click);
             // 
             // dataGridViewBrands
             // 

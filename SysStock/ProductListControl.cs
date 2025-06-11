@@ -23,5 +23,10 @@ namespace SysStock
         {
 
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadControl(new ProductCreateControl());
+        }
     }
 }
