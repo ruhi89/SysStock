@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SysStock
 {
-    public partial class UserListControl: UserControl
+    public partial class UserListControl : UserControl
     {
         private MainForm mainForm;
 
@@ -24,29 +24,54 @@ namespace SysStock
 
         private void UserListControl_Load(object sender, EventArgs e)
         {
-           LoadUserList();
+            LoadUserList();
         }
 
-        private void LoadUserList()
+        private void LoadUserList(string searchTerm = "")
         {
             try
             {
                 string query = @"SELECT UserId, Username, FullName, Email, Role, 
-                                 CASE WHEN IsActive = 1 THEN 'Active' ELSE 'Inactive' END AS Status, 
-                                 CreatedAt 
-                                 FROM Users";
-                DataTable dt= da.ExecuteQueryTable(query);
+                 CASE WHEN IsActive = 1 THEN 'Active' ELSE 'Inactive' END AS Status, 
+                 CreatedAt 
+                 FROM Users";
 
+                if (!string.IsNullOrWhiteSpace(searchTerm))
+                {
+                    query += $" WHERE Username LIKE '%{searchTerm}%'";
+                }
+
+                DataTable dt = da.ExecuteQueryTable(query);
+
+                dataGridViewUsers.Columns.Clear();
                 dataGridViewUsers.DataSource = dt;
 
-                DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn();
-                deleteButton.Name = "Delete";
-                deleteButton.HeaderText = "Action";
-                deleteButton.Text = "Delete";
-                deleteButton.UseColumnTextForButtonValue = true;
-                deleteButton.DefaultCellStyle.ForeColor = Color.Red;
 
-                dataGridViewUsers.Columns.Add(deleteButton);
+                dataGridViewUsers.Columns["UserId"].HeaderText = "ID";
+                dataGridViewUsers.Columns["Username"].HeaderText = "Username";
+                dataGridViewUsers.Columns["FullName"].HeaderText = "Full Name";
+                dataGridViewUsers.Columns["Email"].HeaderText = "Email";
+                dataGridViewUsers.Columns["Role"].HeaderText = "User Role";
+                dataGridViewUsers.Columns["Status"].HeaderText = "Account Status";
+                dataGridViewUsers.Columns["CreatedAt"].HeaderText = "Registration Date";
+
+               
+                DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
+                editButton.Name = "Edit";
+                editButton.HeaderText = "Action";
+                editButton.Text = "Edit";
+                editButton.UseColumnTextForButtonValue = true;
+                editButton.DefaultCellStyle.ForeColor = Color.Blue;
+                dataGridViewUsers.Columns.Add(editButton);
+
+                DataGridViewButtonColumn toggleStatusButton = new DataGridViewButtonColumn();
+                toggleStatusButton.Name = "ToggleStatus";
+                toggleStatusButton.HeaderText = "Status Control";
+                toggleStatusButton.Text = "Toggle";
+                toggleStatusButton.UseColumnTextForButtonValue = true;
+                toggleStatusButton.DefaultCellStyle.ForeColor = Color.DarkGreen;
+                dataGridViewUsers.Columns.Add(toggleStatusButton);
+
 
                 dataGridViewUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridViewUsers.ReadOnly = true;
@@ -55,49 +80,64 @@ namespace SysStock
                 dataGridViewUsers.AllowUserToAddRows = false;
                 dataGridViewUsers.AllowUserToDeleteRows = false;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error loading user list: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
         }
+
 
         private void dataGridViewUsers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && dataGridViewUsers.Columns[e.ColumnIndex].Name == "Delete")
+            if (e.RowIndex < 0 || e.RowIndex >= dataGridViewUsers.Rows.Count)
+                return;
+            if (e.ColumnIndex < 0 || e.ColumnIndex >= dataGridViewUsers.Columns.Count)
+                return;
+
+            int userId = Convert.ToInt32(dataGridViewUsers.Rows[e.RowIndex].Cells["UserId"].Value);
+            if (dataGridViewUsers.Columns[e.ColumnIndex].Name == "ToggleStatus")
             {
-                int userId = Convert.ToInt32(dataGridViewUsers.Rows[e.RowIndex].Cells["UserId"].Value);
 
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this user?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (result == DialogResult.Yes)
+
+                string currentStatus = dataGridViewUsers.Rows[e.RowIndex].Cells["Status"].Value.ToString();
+                int newStatus = currentStatus == "Active" ? 0 : 1;
+
+                try
                 {
-                    try
-                    {
-                        string query = $"DELETE FROM Users WHERE UserId = {userId}";
-                        int rowsAffected = da.ExecuteDMLQuery(query);
+                    string updateQuery = $"UPDATE Users SET IsActive = {newStatus} WHERE UserId = {userId}";
+                    int result = da.ExecuteDMLQuery(updateQuery);
 
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("User deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LoadUserList();
-                        }
-                        else
-                        {
-                            MessageBox.Show("No user deleted. Check if the user exists.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                    }
-                    catch (Exception ex)
+                    if (result > 0)
                     {
-                        MessageBox.Show("Error deleting user: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        string statusText = newStatus == 1 ? "activated" : "deactivated";
+                        MessageBox.Show($"User successfully {statusText}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadUserList();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error updating status: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
+            else if (dataGridViewUsers.Columns[e.ColumnIndex].Name == "Edit")
+            {
+                mainForm.LoadControl(new UserRegisterControl(mainForm, userId));
+            }
+
         }
+
 
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            mainForm.LoadControl(new UserRegisterControl());
+            mainForm.LoadControl(new UserRegisterControl(mainForm));
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchTerm = txtSearch.Text.Trim();
+            LoadUserList(searchTerm);
         }
     }
 }

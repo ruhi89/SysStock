@@ -15,7 +15,7 @@ namespace SysStock
         private SqlDataAdapter adapter;
         private DataSet dataSet;
 
-        private string connectionString = @"Server=RUHI-S-HP\SQLEXPRESS;Database=SysStockDB;Trusted_Connection=True;";
+        private string connectionString = @"Server=SAKIBS-ZENBOOK\SQLEXPRESS;Database=SysStockDB;Trusted_Connection=True;";
         public DataAccess()
         {
             connection = new SqlConnection(connectionString);

@@ -21,3 +21,27 @@ E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysSto
 E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.SettingsControl.resources
 E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.ChangePasswordControl.resources
 E:\AIUB\8th semester\OBJECT ORIENTED PROGRAMMING 2\FINAL PROJECT\SysStock\SysStock\obj\Debug\SysStock.UserEditControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\bin\Debug\SysStock.exe.config
+D:\AIUB\Personal Projects\SysStock\SysStock\bin\Debug\SysStock.exe
+D:\AIUB\Personal Projects\SysStock\SysStock\bin\Debug\SysStock.pdb
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.csproj.AssemblyReference.cache
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.exe.config
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.AdminDashboardControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.BrandCreateControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.BrandListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.CatagoryCreateControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.CategoryListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.ChangePasswordControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.LoginForm.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.MainForm.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.ProductCreateControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.ProductListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.Properties.Resources.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.SettingsControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.UserEditControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.UserListControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.UserRegisterControl.resources
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.csproj.GenerateResource.cache
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.csproj.CoreCompileInputs.cache
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.exe
+D:\AIUB\Personal Projects\SysStock\SysStock\obj\Debug\SysStock.pdb
