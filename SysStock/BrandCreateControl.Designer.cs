@@ -42,10 +42,9 @@
             // txtBrandName
             // 
             this.txtBrandName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBrandName.Location = new System.Drawing.Point(440, 141);
-            this.txtBrandName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBrandName.Location = new System.Drawing.Point(293, 92);
             this.txtBrandName.Name = "txtBrandName";
-            this.txtBrandName.Size = new System.Drawing.Size(234, 26);
+            this.txtBrandName.Size = new System.Drawing.Size(157, 20);
             this.txtBrandName.TabIndex = 21;
             // 
             // lblDescription
@@ -53,10 +52,9 @@
             this.lblDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(311, 195);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescription.Location = new System.Drawing.Point(207, 127);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(108, 25);
+            this.lblDescription.Size = new System.Drawing.Size(68, 15);
             this.lblDescription.TabIndex = 15;
             this.lblDescription.Text = "Description";
             // 
@@ -65,10 +63,9 @@
             this.lblBrandName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBrandName.AutoSize = true;
             this.lblBrandName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrandName.Location = new System.Drawing.Point(311, 144);
-            this.lblBrandName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBrandName.Location = new System.Drawing.Point(207, 94);
             this.lblBrandName.Name = "lblBrandName";
-            this.lblBrandName.Size = new System.Drawing.Size(115, 25);
+            this.lblBrandName.Size = new System.Drawing.Size(73, 15);
             this.lblBrandName.TabIndex = 14;
             this.lblBrandName.Text = "Brand Name";
             // 
@@ -77,10 +74,9 @@
             this.lblRegister.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRegister.AutoSize = true;
             this.lblRegister.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegister.Location = new System.Drawing.Point(407, 33);
-            this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRegister.Location = new System.Drawing.Point(271, 21);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(164, 40);
+            this.lblRegister.Size = new System.Drawing.Size(108, 25);
             this.lblRegister.TabIndex = 13;
             this.lblRegister.Text = "Add Brand";
             // 
@@ -90,20 +86,19 @@
             this.panel1.Controls.Add(this.rtbDescription);
             this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Location = new System.Drawing.Point(301, 129);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(201, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 348);
+            this.panel1.Size = new System.Drawing.Size(262, 226);
             this.panel1.TabIndex = 25;
             // 
             // rtbDescription
             // 
-            this.rtbDescription.Location = new System.Drawing.Point(139, 66);
+            this.rtbDescription.Location = new System.Drawing.Point(93, 43);
+            this.rtbDescription.Margin = new System.Windows.Forms.Padding(2);
             this.rtbDescription.Name = "rtbDescription";
-            this.rtbDescription.Size = new System.Drawing.Size(234, 96);
+            this.rtbDescription.Size = new System.Drawing.Size(157, 64);
             this.rtbDescription.TabIndex = 11;
             this.rtbDescription.Text = "";
-            //this.rtbDescription.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // btnRegister
             // 
@@ -111,37 +106,40 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRegister.Location = new System.Drawing.Point(266, 211);
+            this.btnRegister.Location = new System.Drawing.Point(177, 137);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(110, 35);
+            this.btnRegister.Size = new System.Drawing.Size(73, 23);
             this.btnRegister.TabIndex = 10;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(140, 211);
+            this.btnClear.Location = new System.Drawing.Point(93, 137);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(110, 35);
+            this.btnClear.Size = new System.Drawing.Size(73, 23);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
             // BrandCreateControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtBrandName);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblBrandName);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BrandCreateControl";
-            this.Size = new System.Drawing.Size(994, 511);
-            //this.Load += new System.EventHandler(this.BrandCreateControl_Load);
+            this.Size = new System.Drawing.Size(663, 332);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

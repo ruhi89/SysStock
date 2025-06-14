@@ -39,7 +39,7 @@
             // 
             this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsers.Location = new System.Drawing.Point(0, 55);
-            this.dataGridViewUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewUsers.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.RowHeadersWidth = 62;
             this.dataGridViewUsers.RowTemplate.Height = 28;
@@ -55,7 +55,7 @@
             this.btnAddUser.FlatAppearance.BorderSize = 0;
             this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddUser.Location = new System.Drawing.Point(558, 12);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(80, 30);
             this.btnAddUser.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(113, 12);
+            this.txtSearch.Location = new System.Drawing.Point(114, 12);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(100, 20);
             this.txtSearch.TabIndex = 2;
@@ -74,7 +74,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(3, 15);
+            this.lblSearch.Location = new System.Drawing.Point(4, 15);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(104, 13);
             this.lblSearch.TabIndex = 3;
@@ -88,7 +88,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.dataGridViewUsers);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserListControl";
             this.Size = new System.Drawing.Size(663, 332);
             this.Load += new System.EventHandler(this.UserListControl_Load);

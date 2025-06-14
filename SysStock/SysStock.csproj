@@ -64,11 +64,11 @@
     <Compile Include="BrandListControl.Designer.cs">
       <DependentUpon>BrandListControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatagoryCreateControl.cs">
+    <Compile Include="CategoryCreateControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CatagoryCreateControl.Designer.cs">
-      <DependentUpon>CatagoryCreateControl.cs</DependentUpon>
+    <Compile Include="CategoryCreateControl.Designer.cs">
+      <DependentUpon>CategoryCreateControl.cs</DependentUpon>
     </Compile>
     <Compile Include="CategoryListControl.cs">
       <SubType>UserControl</SubType>
@@ -148,8 +148,8 @@
     <EmbeddedResource Include="BrandListControl.resx">
       <DependentUpon>BrandListControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CatagoryCreateControl.resx">
-      <DependentUpon>CatagoryCreateControl.cs</DependentUpon>
+    <EmbeddedResource Include="CategoryCreateControl.resx">
+      <DependentUpon>CategoryCreateControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryListControl.resx">
       <DependentUpon>CategoryListControl.cs</DependentUpon>
